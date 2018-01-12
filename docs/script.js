@@ -16,4 +16,13 @@ function setLoginLink() {
         + window.location.href + "&state=" + randString);
 }
 
+function getCodeFromUrl(url){
+    urlObject = new URL(url);
+    let code = urlObject.searchParams.get("code");
+    console.log(code);
+    return code;
+}
+
 setLoginLink();
+
+let code = getCodeFromUrl(window.location.href);
