@@ -8,7 +8,7 @@
 	* Route of the app
 	*/
 
-angular.module('todogame')
+angular.module('home')
 	.config(['$stateProvider', function ($stateProvider) {
 		$stateProvider
 			

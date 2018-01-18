@@ -4,7 +4,7 @@
                 <ng-md-icon icon="menu"></ng-md-icon>
             </md-button>
             <h3>
-                <a href="/">todogame</a>
+                <a href="/">toDoProject</a>
             </h3>
             <span flex></span>
             <md-button aria-label="Search" ng-click="showSearch = !showSearch">
@@ -16,22 +16,9 @@
                 </md-button>
                 <md-menu-content width="4">
                     <md-menu-item>
-                        <md-button ng-click="layout.changeProfile($event)">
-                            <md-icon>face</md-icon>
-                            Profile
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-item>
-                        <md-button ng-click="layout.changePassword()">
-                            <md-icon>lock</md-icon>
-                            Password
-                        </md-button>
-                    </md-menu-item>
-                    <md-menu-divider></md-menu-divider>
-                    <md-menu-item>
-                        <md-button ng-click="layout.logOut()">
+                        <md-button ng-click="layout.login()">
                             <md-icon>power_settings_new</md-icon>
-                            Logout
+                            <a href="vm.loginLink">Login</a>
                         </md-button>
                     </md-menu-item>
                 </md-menu-content>

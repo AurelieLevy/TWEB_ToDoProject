@@ -9,7 +9,7 @@
 	* Controller of the app
 	*/
 	angular
-		.module('todogame')
+		.module('toDoProject')
 		.controller('SidenavCtrl', SidenavCtrl)
 		.controller('SettingsCtrl', SettingsCtrl);
 

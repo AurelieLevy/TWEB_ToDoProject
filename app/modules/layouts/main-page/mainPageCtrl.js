@@ -10,7 +10,7 @@
 	*/
 
 	angular
-		.module('todogame')
+		.module('toDoProject')
 		.controller('LayoutCtrl', Layout);
 
 	Layout.$inject = ['$mdSidenav', '$cookies', '$state', '$mdToast', '$mdDialog'];
@@ -82,10 +82,14 @@
 		vm.logOut = function () {
 
 			alert('Implement your Function Here');
-			// $cookies.put('dev_appserver_login', ' ');
-			//$state.go('out', {}, {reload: true});
+			$cookies.put('dev_appserver_login', ' ');
+			$state.go('out', {}, {reload: true});
 
 		};
+
+		vm.login = function () {
+			
+		}
 
 		var originatorEv;
 		vm.openMenu = function ($mdOpenMenu, ev) {

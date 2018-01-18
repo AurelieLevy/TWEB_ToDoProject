@@ -1,4 +1,4 @@
-(function () {
+(function() {
 	'use strict';
 
 	/**
@@ -9,34 +9,41 @@
 	* Service of the app
 	*/
 
-	angular.module('todogame')
+	angular
+		.module('home')
 		.factory('homeService', homeService);
 
 	homeService.$inject = ['$http'];
 
 	function homeService($http) {
-
-		var list = [
-			{"feature": "Implemented Best Practices, following: John Papa's Guide"},
-			{"feature": "Using Controller AS syntax"},
-			{"feature": "Wrap Angular components in an Immediately Invoked Function Expression (IIFE)"},
-			{"feature": "Declare modules without a variable using the setter syntax"},
-			{"feature": "Using named functions"},
-			{"feature": "Including Unit test with Karma"},
-			{"feature": "Including UI options for Bootstrap or Angular-Material"},
-			{"feature": "Including Angular-Material-Icons for Angular-Material UI"},
-			{"feature": "Dynamic Menu generator for both themes"},
-			{"feature": "Grunt task for Production and Development"}
-		];
-
 		return {
-			getFeaturesList: getFeaturesList
+			getMyPhotos: getMyPhotos,
 		};
 
-		function getFeaturesList() {
-			return list;
+		function getMyPhotos(urlString) {
+			return new Promise((resolve) => {
+				console.log(`Fetching ${urlString}...`);
+
+				// Simple GET request example:
+				$http({
+					method: 'GET',
+					url: urlString
+				}).then(function successCallback(response) {
+						// this callback will be called asynchronously
+						// when the response is available
+						resolve({
+							status: 1, 
+							response,
+						});
+					}, function errorCallback(response) {
+						// called asynchronously if an error occurs
+						// or server returns response with an error status.
+						resolve({
+							status: 0, 
+							response,
+						});
+					});
+			});
 		}
-
 	}
-
 })();

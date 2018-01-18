@@ -11,7 +11,7 @@
 
 
 	angular
-		.module('todogame')
+		.module('toDoProject')
 		.config(configure)
 		.run(runBlock);
 

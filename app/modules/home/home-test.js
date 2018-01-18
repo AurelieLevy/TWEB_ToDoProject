@@ -13,7 +13,7 @@
 		var controller = null, $scope = null, $location;
 
 		beforeEach(function () {
-			module('todogame');
+			module('toDoProject');
 		});
 
 		beforeEach(inject(function ($controller, $rootScope, _$location_) {
