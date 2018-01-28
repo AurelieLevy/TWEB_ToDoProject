@@ -46,4 +46,4 @@ To connect yourself, you just need to click on the ```Login``` button in the pop
 
 - <a href="https://remij1.github.io/">Client</a> example on github-pages
 - <a href="https://github.com/remij1/TWEB_ToDoProject_Backend">Server</a> on github
-- <a href="https://github.com/remij1/TWEB_ToDoProject">Client</a> code
+- <a href="https://github.com/remij1/remij1.github.io">Client</a> code
