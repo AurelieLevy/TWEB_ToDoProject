@@ -10,7 +10,9 @@ This project is a gamification of the use of Wunderlist. When you finished a tas
 
 ## Server
 
-The server make the link between the Wunderlist API and the client. The client will make requests by using the server API endpoints and his information will be saved in a mangoose database.
+The server make the link between the Wunderlist API and the client. The client will first log himself with his credentials to wunderlist and then make requests by using the server API endpoints and a code given by wunderlist. 
+
+His information will be saved in a mangoose database by the server.
 
 ![Sequence diagram](https://github.com/remij1/TWEB_ToDoProject/blob/master/Authentification.png)
 
