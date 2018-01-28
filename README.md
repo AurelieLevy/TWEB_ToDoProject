@@ -40,4 +40,10 @@ Once you did this, you can go <a href="https://remij1.github.io/#!/dashboard">he
 - **My photos** that will show you the pictures you have already bought and the tasks you completed
 - **Shop** is the shop where you will be able to buy others pictures.
 
-To connect yourself, you just need to click on the ```Login``` button at the top right of the page, enter your credentials in the login page of wunderlist and it's done. After that, you will find your name and the amount of gold you have earned at the top of your client page.
+To connect yourself, you just need to click on the ```Login``` button in the pop-up, enter your credentials in the login page of wunderlist and it's done. After that, you will find your name and the amount of gold you have earned at the top of your client page.
+
+## Links 
+
+- <a href="https://remij1.github.io/">Client</a> example on github-pages
+- <a href="https://github.com/remij1/TWEB_ToDoProject_Backend">Server</a> on github
+- <a href="https://github.com/remij1/TWEB_ToDoProject">Client</a> code
