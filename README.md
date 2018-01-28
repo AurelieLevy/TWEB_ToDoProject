@@ -6,7 +6,7 @@ Wunderlist is an application offering ToDo lists and provides an API allowing de
 
 It is downloadable for Mac, Windows, Android and iOS <a href="https://www.wunderlist.com/fr/download/">here</a>.
 
-This project is a gamification of the use of Wunderlist. When you finished a task, you win more or less coins, allowing you to buy images. The project is separate into two application : A frontend client made using angular and a server.
+This project is a gamification of the use of Wunderlist. When you finished a task, you win more or less coins, allowing you to buy images. The project is separate into two application : A frontend client made using angularjs and a server.
 
 ## Server
 
